@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+body {
+  margin: 0;
+  background-color: rgb(220, 220, 220);
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1em;
+  align-items: center;
+  text-align: center;
+ /* border-bottom: 1px solid rgb(220, 220, 220); */
+  background: black;
+  height: 50px;
+}
+
+
+main {
+  border-bottom: 1px solid black;
+  background-color: black;
+  position: relative;
+
+}
+
+
+
+.bdp {
+  position: absolute;
+  top: 100px;
+  right: 250px;
+  padding: 0px 20px 20px 20px;
+  width: 400px;
+  height: 250px;
+  border-radius: 20px;
+  background: rgba(8, 8, 8, 0.432);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.2px);
+  -webkit-backdrop-filter: blur(9.2px);
+  border: 1px solid rgba(8, 8, 8, 0.3);
+}
+
+.bdp h2 {
+  color: rgba(255, 254, 254, 0.952);
+}
+
+.bdp p {
+  color: rgba(233, 238, 241, 0.863);
+  font-size: 20px;
+}
+
+
+.streams {
+  background-color: rgb(220, 220, 220);
+  
+  font-weight: 600;
+  font-size: 14px;
+  height: 85px;
+
+}
+
+.streams h3 {
+  padding: 20px;
+}
+
+.streams1 {
+  background-color: rgb(220, 220, 220);
+  font-weight: 600;
+  border: solid 0.5px black;
+  padding: 20px;
+  height: 50px;
+  width: 350px;
+
+}
+
+.bdp span {
+  color: purple;
+  padding-top: 10px;
+}
+main img {
+  width: 100%;
+}
+
+.navLinks {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(220, 220, 220);
+}
+
+.navLinks:hover {
+  color: white;
+  padding: 1em 1em;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid black;
+  height: 750px;
+}
+
+
+header h3 {
+  border-bottom: solid 1px black;
+  font-weight: lighter;
+
+}
+
+.heading1{
+  border-right: solid 1px black;
+  padding: 5%;
+  padding-top: 0%;
+  background-color: silver;
+}
+
+.heading2{
+  border-right: solid 1px black;
+}
+
+
+
+header h3 {
+  padding-left: 15px;
+  padding-bottom: 10px;
+
+}
+
+.heading3 p {
+  padding-top: 250px;
+}
+
+
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 60px;
+}
+
+footer .links {
+  padding-top: 20px;
+  
+}
+
+footer a {
+  color: black;
+}
+
+.sponsor {
+  padding-top: 20px;
+}
+
+.extra {
+  padding-top: 20px;
+}
+
+.of {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.of img {
+  width: 100%;
+}
+
+.logo {
+  grid-column: 3;
+  background-image: url("logo.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 6vh;
+}
+
+@media (max-width: 550px) {
+  .heading1 {
+    background-color: white;
+    color: black;
+    grid-column: span 3;
+    border-bottom: 1px solid silver;
+ }
+
+ .heading2 {
+  background-color: lightskyblue;
+  grid-column: span 3;
+}
+
+.heading3 {
+  background-color: lightblue;
+  grid-column: span 3;
+  
+}
+.bdp {
+  display: none;
+}
+.heading3 p {
+  padding-top: 0%;
+}
+
+.heading4 {
+  
+  grid-column: span 3;
+  
+}
+
+.a{
+  display: none;
+}
+
+.b{
+  display: none;
+}
+
+.c{
+  display: none;
+}
+
+.d{
+  display: none;
+}
+
+nav {
+  border-bottom: none;
+}
+}  
+
