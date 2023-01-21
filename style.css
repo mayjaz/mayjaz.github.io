@@ -303,7 +303,7 @@ footer a {
 
 @media (max-width: 550px) {
   .heading1 {
-    background-color: azure;
+    background-color: whitesmoke;
     color: black;
     grid-column: span 3;
     border-bottom: 1px solid silver;
