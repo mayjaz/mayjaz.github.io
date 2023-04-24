@@ -48,3 +48,43 @@
 	</main>
 </body>
 </html>
+
+<!--$servername = "localhost";
+$database = "medical";
+$username = "root";
+$password = "";
+
+// Create connection
+
+$conn = mysqli_connect($servername, $username, $password, $database);
+
+// Check connection
+
+if ($conn->connect_error) {
+	die("Connection failed: " . $conn->connect_error );
+}
+
+$name =  $_REQUEST['name'];
+$dob = $_REQUEST['dob'];
+$gender = $_REQUEST['gender'];
+$address =  $_REQUEST['address'];
+$phone = $_REQUEST['phone'];
+$email = $_REQUEST['email'];
+$emergency_contact = $_REQUEST['emergency_contact'];
+$insurance = $_REQUEST['insurance'];
+$medical_history = $_REQUEST['medical_history'];
+$reason = $_REQUEST['reason'];
+$comments = $_REQUEST['comments'];       
+//insert query execution
+
+$sql = "INSERT INTO medical VALUES ('$name',
+    '$dob','$gender','$address', '$phone', '$email', '$emergency_contact', '$insurance', '$medical_history', '$reason', '$comments')";
+
+if(mysqli_query($conn, $sql)){
+	echo "<p>data stored in a database successfully</p>";
+} else{
+	echo "ERROR: $sql. "
+		. mysqli_error($conn);
+}
+// Close connection
+mysqli_close($conn);-->
