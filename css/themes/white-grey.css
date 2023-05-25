@@ -1,9 +1,15 @@
 /* Theme */
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 
 main {
-	background: #EDEDED;
+	background: rgb(237, 237, 237);
 	color: #4B5658;
+	position: relative;
 }
+
+html {
+	scroll-behavior: smooth;
+  }
 
 .icons-social a {
 	color: #4B5658;
@@ -12,3 +18,75 @@ main {
 .icons-social a svg path{
 	fill: #4B5658;
 }
+
+.scroll-down-arrow {
+	position: absolute;
+	right: 50%;
+  bottom: 0;
+
+}
+section {
+	background: #EDEDED;
+	color: #4B5658;
+	font-family: 'Syne Mono', monospace;
+}
+  .scroll-down-arrow a {
+	
+	color: #4B5658;
+  }
+
+#section2 {
+	margin-left: 10px;
+	
+}
+
+
+.caption {
+	padding: 5px;
+}
+
+.caption h2 {
+	font-weight: bold;
+}
+
+
+.work {
+    display: flex;
+    overflow-x: scroll;
+    white-space: nowrap; /* This will prevent the images from wrapping to the next line */
+    
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+section img {
+	width: 500px;
+	
+	 border-radius: 0px;
+	 border: 0.5px silver solid;
+	 margin-right: 18px;
+	 border-radius: 18px;
+ }
+  
+iframe {
+	padding: 20px;
+	display: flex;
+
+}
+
+
+  
+
+  
+  
+  
