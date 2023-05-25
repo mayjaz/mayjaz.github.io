@@ -9,6 +9,7 @@ main {
 
 html {
 	scroll-behavior: smooth;
+	background: rgb(237, 237, 237);
   }
 
 .icons-social a {
