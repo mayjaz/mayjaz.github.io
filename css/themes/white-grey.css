@@ -2,14 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 
 main {
-	background: rgb(237, 237, 237);
+	/*background: rgb(237, 237, 237);*/
+	 background: linear-gradient(to right,#ffefba, #ffffff);
 	color: #4B5658;
 	position: relative;
 }
 
 html {
 	scroll-behavior: smooth;
-	background: rgb(237, 237, 237);
+	/*background: rgb(237, 237, 237);*/
+	 background: linear-gradient(to right,#ffefba, #ffffff);
   }
 
 .icons-social a {
