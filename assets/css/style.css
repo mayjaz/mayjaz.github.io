@@ -11,11 +11,6 @@
     position: sticky-top;
 }
 
-html {
-    background-color: transparent;
-  
-}
-
 .logo img {
     height: 80px;
 }
@@ -32,9 +27,6 @@ html {
 section {
     background-color: aliceblue;
     border-bottom: 0.5px solid #21614c;
-   
-
-
 }
 .nav-links a {
     color: #21614c;
@@ -44,18 +36,14 @@ section {
 }
 
 header {
-    background: linear-gradient(to bottom right, #ffffff, #a1fabf);
+    background: linear-gradient(to top left, #ffffff, #a1fabf);
 }
 
 body {
-    /* background: linear-gradient(to bottom right, #ffffff, #50c878);
-   margin-right: 250px;
-    margin-left: 200px; */
     font-family: 'Arapey', serif;
     color: rgb(33, 97, 76);
+    margin: 0;
     background-color: aliceblue;
-	margin:0;
-
 }
 
 
@@ -76,14 +64,12 @@ article {
     justify-content: center;
 }
 
-
 .right img {
     height: 480px;
 }
 .left {
     grid-column: 1/2;
     margin-right: 28px;
-    
 }
 
 .left h1{
@@ -100,8 +86,8 @@ article {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 1em;
-   background-color: aliceblue;
-   padding: 28px;
+    background-color: aliceblue;
+    padding: 28px;
     border-top: 1px solid rgb(33, 97, 76);
    /* border-bottom: 1px solid rgb(33, 97, 76);*/
 }
@@ -109,31 +95,31 @@ article {
 #section3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-top: solid 0.5px #21614c;
-    background: linear-gradient(to bottom right, #ffffff, #a1fabf);
+    border-top: solid 0.5px #21614c; 
 }
 
 .best {
     grid-column: 1/2;
 }
 
+.best h1{
+    font-size: 24px;
+}
+
 .best1 {
     grid-column: 2/3;
-    
 }
 
 .best1 img {
     border: none;
-    padding: 50px;
-    height: 480px;
+    padding-left: 150px;
+    height: 380px;
     width: auto;
 }
 
 #section3 p{
-   
     font-size: 18px;
     margin-left: 28px;
-    
 }
 
 #section3 li {
@@ -272,8 +258,14 @@ footer h1 {
 
 #blog h2 {
     margin-left: 28px;
+    border-bottom: 2px solid #21614c;
+    padding-bottom: 10px;
 }
   
+#blog {
+    background-color: #67caa9;
+    border-top: 2px solid #21614c;
+}
 .marquee p {
     font-weight: bold;
     font-size: 33px;
@@ -414,6 +406,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     position: relative;
     width: 420px;
     margin: 50px auto 100px auto;
+    
   }
 
  .formtitle {
@@ -445,7 +438,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   }
   
   input:hover {
-    background: #b3aca7;
+    background: aliceblue;
     color: #e2dedb;
   }
   
@@ -472,8 +465,8 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   }
   
   textarea:hover {
-    background: #b3aca7;
-    color: #e2dedb;
+    background: al;
+    color: aliceblue;
   }
   
   #submit {
@@ -494,7 +487,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   }
   
   #submit:hover {
-    color: #e2dedb;
+    color: aliceblue;
   }
 
 
@@ -505,7 +498,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     }
 
     .left h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .right{
@@ -553,7 +546,12 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 
     .best {
         grid-column: span 3;
-        height: 500px;
+        height: 400px;
+        padding-left: 20px;
+    }
+
+    .best h1 {
+        margin-left:0px;
     }
 
     .best1  {
@@ -561,8 +559,8 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     }
 
     .best1 img {
-        height: 400px;
-        padding: 0px;
+        height: 330px;
+        padding-left: 80px;
     }
 
 #section3 li{
@@ -572,7 +570,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 #section3 p {
     background: transparent;
     margin-left: 3px;
-}
+} 
 
 
 
