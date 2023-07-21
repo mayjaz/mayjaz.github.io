@@ -83,7 +83,7 @@ details>p{
 }
 
 section {
-    background-color: whitesmoke;
+    background-color: white;
     border-bottom: 0.5px solid #21614c;
 }
 .nav-links a {
@@ -103,7 +103,7 @@ body {
     font-family: 'Ovo', serif;
     color: rgb(33, 97, 76);
     margin: 0;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 
@@ -146,7 +146,7 @@ article {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 1em;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 28px;
     border-top: 1px solid rgb(33, 97, 76);
    /* border-bottom: 1px solid rgb(33, 97, 76);*/
@@ -761,7 +761,7 @@ nav ul li ul li a{
 
     #services {
         grid-template-columns: 1fr;
-        background-color: whitesmoke;
+        background-color: white;
     }
 
     .web{
