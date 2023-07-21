@@ -568,7 +568,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     float: left;
    
    
-    padding-top:20px;
+ ;
     line-height: 70px;
     font-size: 1.5em;
 }
