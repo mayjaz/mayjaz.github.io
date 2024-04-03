@@ -185,7 +185,7 @@ section {
 
 
 
-@media (max-width: 480px) {
+@media (min-width: 550px) {
 
  .main {
   display: none;
