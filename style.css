@@ -185,7 +185,7 @@ section {
 
 
 
-@media (min-width: 550px) {
+ @media only screen and (max-width: 600px){
 
  .main {
   display: none;
@@ -235,8 +235,6 @@ section {
   height: 8vh;
   margin-left: 35%;
   margin-top: -0.5vh;
-  
-   
  }
 
  .shop {
@@ -250,7 +248,7 @@ section {
 
  .drip {
   margin: 20px;
-   font-size: 20px:
+  font-size: 20px;
   
  }
 
@@ -265,7 +263,7 @@ section {
  }
 
 body {
-  background: white;
+  background: rgb(54, 52, 52);
  }
 
 
