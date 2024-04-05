@@ -185,9 +185,9 @@ section {
 
 
 
- @media only screen and (max-width: 600px){
+@media only screen and (max-width: 480px){
 
- .main {
+.main {
   display: none;
   padding: 0;
  }
@@ -258,12 +258,8 @@ section {
  }
 
  .marquee {
-  height: 24px;
-  font-size: 13px;
- }
-
-body {
-  background: rgb(54, 52, 52);
+  height: 18px;
+  font-size: 12px;
  }
 
 
