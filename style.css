@@ -185,15 +185,17 @@ section {
 
 
 
-@media only screen and (max-width: 480px){
+ @media only screen and (max-width: 550px){
 
-.main {
+  .main {
   display: none;
-  padding: 0;
+
  }
-.mobile-hero {
+
+ .mobile-hero {
   position: relative;
-}
+ }
+
  .mobile-hero img{
   display: block;
   width: 100%;
@@ -238,6 +240,7 @@ section {
  }
 
  .shop {
+  display: grid;
   margin-top: 50px;
   grid-template-columns: 100%;
  }
@@ -247,6 +250,7 @@ section {
  }
 
  .drip {
+  grid-template-columns: 100%;
   margin: 20px;
   font-size: 20px;
   
@@ -258,9 +262,10 @@ section {
  }
 
  .marquee {
-  height: 18px;
-  font-size: 12px;
+  height: 8px;
  }
 
-
+body {
+  background:red;
+ }
 }
