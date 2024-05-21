@@ -4,8 +4,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
 
 .container {
-    margin: auto;
+    padding: auto;
     
+}
+
+.mobimg {
+
+  display: hidden;
 }
 
 body {
@@ -56,7 +61,8 @@ h1 {
 
   .main {
     position: relative;
-    padding-top: 0; 
+    padding-top: 12vh; 
+    height: 50vh;
   }
   
   .main h1 {
@@ -76,7 +82,6 @@ h1 {
   .main img {
     position: absolute; 
     top: 0; 
-   
     width: 350px; 
     height: auto; 
   }
@@ -106,7 +111,7 @@ nav {
 
 .shop {
 
-    padding: 20px;
+    padding: 5px;
 }
 
 .nav-links {
@@ -166,7 +171,7 @@ a {
 .gallery{
     
     width: 300px;
-    padding-top: 18vh;
+ 
   }
 
   .gallery img {
@@ -305,8 +310,8 @@ a {
   
   .responsive{
     width: 100%;
-    margin: 6px 0;
-    padding-top: 0;
+    
+    padding: 6vh;
   }
 
   .nav-links {
@@ -320,7 +325,7 @@ a {
 
   nav img {
     height: 12vh;
-    margin-left: 33%;
+    margin-left: 0;
     padding-top: 10px;
 }
   .main {
@@ -347,11 +352,7 @@ a {
       display: none;
     }
   
-    img {
-      margin-top: 1vh;
-      height:50vh;
- 
-    }
+   
 
     section {
       font-family: "Kode Mono", monospace;
@@ -362,7 +363,11 @@ a {
       font-size: 3vh;
     }
 
-    .gallery {
-      padding-top: 2vh;
+  
+    .mobimg {
+      width: 100%;
+      height:50vh;
+      display: block;
+     
     }
   }
