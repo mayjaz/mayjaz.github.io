@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=David+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+
+.container {
+    margin: auto;
+    
+}
+
+body {
+    font-family: 'Lacquer', cursive;
+    background-color: hsl(0, 0%, 98%);
+ 
+}
+
+h1 {
+    font-family: "Kode Mono", monospace;
+    font-size: 50px;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    color: black;
+}
+
+.marquee {
+    height: 28px;
+    overflow: hidden;
+    position: relative;
+    color: hsl(84, 100%, 59%);
+    border-bottom: 1px solid greenyellow;
+  
+  }
+  
+  .marquee p {
+  
+    position: absolute;
+    margin: 0;
+    font-weight: 100;
+    text-align: center;
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  
+    animation: scroll-left 80s linear infinite;
+  }
+  
+  @keyframes scroll-left {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .main {
+    position: relative;
+    padding-top: 0; 
+  }
+  
+  .main h1 {
+    position: relative;
+    padding-left: 2px; 
+    font-size: 12vh;
+    z-index: 2;
+    color: white;
+    font-family: "Kode Mono", monospace;
+    
+  }
+
+  .mobimg {
+    display: none;
+  }
+  
+  .main img {
+    position: absolute; 
+    top: 0; 
+   
+    width: 350px; 
+    height: auto; 
+  }
+
+.main button {
+    font-size: 22px;
+    border:solid 2px black;
+    border-radius: 70%;
+    height: 75px;
+    width: 175px; 
+    color: black;
+    text-decoration: underline;
+    background-color: rgb(70, 234, 3);
+  
+  }
+nav img {
+    height: 16vh;
+    margin-left: 66vh;
+    padding-top: 3vh;
+}
+
+nav {
+    height: 10vh;
+    padding: 0px;
+    background-color: black;
+}
+
+.shop {
+
+    padding: 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    color: black;
+    font-size: 22px;
+    padding-top: 0px;
+
+}
+
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: solid 1px black;
+    font-size: 25px;
+    height: 50px;
+    width: 200px;
+}
+
+h5 {
+    text-align: center;
+    font-family: 'VT323', monospace;
+    font-size: 35px;
+    
+}
+
+
+.grid-container {
+    display: grid;
+
+}
+table {
+     margin-left: 50px;
+ }
+
+
+a {
+    color: black;
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+  }
+
+.gallery{
+    
+    width: 300px;
+    padding-top: 18vh;
+  }
+
+  .gallery img {
+    border: solid 1px yellowgreen;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+  }
+
+  .des{
+    text-align: center;
+    font-size: 20px;
+    color:yellowgreen;
+    font-family: 'VT323', monospace;
+  }
+
+  .responsive {
+    
+    padding: 6px;
+    float: left;
+    width: 33%;
+  }
+
+.products {
+    margin-left: 0px;
+    font-size: 30px;
+    display: list-item;
+    width: 30%;
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+      margin: auto;
+    }
+   
+    .nav-links {
+        position: fixed;
+        background-color: yellowgreen;
+        color: blue;
+
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+
+    }
+
+    .nav-link {
+      color: yellowgreen;
+    }
+
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        color: yellowgreen;
+        pointer-events: all;
+    }
+
+    .line {
+        width: 30px;
+        height: 3px;
+        background: black;
+        margin: 5px;
+    }
+
+    nav {
+        position: relative;
+        color: azure;
+    }
+
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+    }
+
+    .nav-links li {
+        opacity: 0;
+
+    }
+
+    .nav-links li a {
+        font-size: 25px;
+        
+    }
+
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+
+    li.fade {
+        opacity: 1;
+    }
+
+  
+    .info {
+      padding: 0px;
+      font-size: 50px;
+  }
+    .container {
+      width: 100%;
+      margin: auto;
+      padding: 0px;
+  }
+  
+  .products {
+      margin-left: 0px;
+      padding-top: 20px;
+      border-left: none;
+      font-size: 20px;
+      
+  }
+  .products h3 {
+   font-size: 30px;
+   padding: 15px;
+  }
+  .promo {
+      display:none ;
+  }
+  
+  .responsive{
+    width: 100%;
+    margin: 6px 0;
+    padding-top: 0;
+  }
+
+  .nav-links {
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      background-color: white;
+
+  }
+
+  nav img {
+    height: 12vh;
+    margin-left: 33%;
+    padding-top: 10px;
+}
+  .main {
+    margin-top: 5vh;
+  }
+    .main h1{
+        
+      font-size: 6.2vh;
+    }
+
+    .main button {
+      width: 12vh;
+      height: 6vh;
+      font-size: 2vh;
+      border-radius: 0;
+      background-color: transparent;
+      border:yellowgreen solid 1px;
+      color: yellowgreen;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+
+    .main img {
+      display: none;
+    }
+  
+    img {
+      margin-top: 1vh;
+      height:50vh;
+ 
+    }
+
+    section {
+      font-family: "Kode Mono", monospace;
+      padding: 2vh;
+     
+    }
+    section h2 {
+      font-size: 3vh;
+    }
+
+    .gallery {
+      padding-top: 2vh;
+    }
+  }

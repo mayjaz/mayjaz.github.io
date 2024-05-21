@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400.700&display=swap');
+
+body{
+	background-color: hsl(0, 0%, 0%);
+    font-family: "Kode Mono", monospace;
+	color: hsl(84, 100%, 59%);
+}
+
+h1 {
+   font-size: 50px;
+   font-family: 'Lacquer', cursive;
+}
+
+h1,h2,h3,h4,h5,h6{
+	color: hsl(84, 100%, 59%);  
+}
+
+.a {
+   font-size: 24px;
+}
+
+
+.box-element{
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 10px;
+}
+
+.thumbnail{
+	width: 100%;
+	height: auto;
+}
+
+.product{
+	border-radius: 0 0 4px 4px;
+}
+
+.col-lg-4, .col-lg-6, .col-lg-8, .col-lg-12{
+	margin-top: 10px;
+}
+
+.btn{
+	border-radius: 0;
+}
+
+.row-image{
+	width: 100px;
+}
+.loginbox {
+    width: 320px;
+    height: 520px;
+    background: black;
+    color: #e2caa8;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input {
+
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.loginbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #e2caa8;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #e2caa8;
+    font-size: 14px;
+}
+
+.button input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #e2caa8;
+    color: black;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+
+
+.form-field{
+	width:250px;
+	display: inline-block;
+	padding: 5px;
+}
+
+.cart-row{
+	display: flex;
+    align-items: flex-stretch;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ececec;
+
+}
+
+.nav {
+    background-color: black;
+}
