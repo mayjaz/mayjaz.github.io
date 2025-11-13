@@ -1,30 +1,32 @@
-$(document).ready(function() {
-    $('nav ul li a:not(:only-child)').click(function(e) {
-        $(this).siblings('.nav-dropdown').toggle();
-        e.stopPropagation();
+document.addEventListener('DOMContentLoaded', () => {
+    const navToggle = document.querySelector('[data-nav-toggle]');
+    const navMenu = document.querySelector('[data-nav]');
+    const body = document.body;
+
+    if (!navToggle || !navMenu) {
+        return;
+    }
+
+    const closeNav = () => {
+        navToggle.setAttribute('aria-expanded', 'false');
+        navMenu.classList.remove('is-open');
+        body.classList.remove('nav-open');
+    };
+
+    navToggle.addEventListener('click', () => {
+        const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', String(!isExpanded));
+        navMenu.classList.toggle('is-open');
+        body.classList.toggle('nav-open');
     });
 
-    $('html').click(function(){
-        $('.nav-dropdown').hide();
-    })
-    $('#nav-toggle').click(function(){
-        $('nav ul').slideToggle();
-    })
-    $('#nav-toggle').on('click', function(){
-        this.classList.toggle('active');
+    navMenu.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', closeNav);
+    });
+
+    document.addEventListener('keyup', (event) => {
+        if (event.key === 'Escape') {
+            closeNav();
+        }
     });
 });
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
